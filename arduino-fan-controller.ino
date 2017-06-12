@@ -68,7 +68,7 @@ float getTemperature(){
  * Start the fan by triggering  the switch
  */
 void powerOnFan(){
-  digitalWrite(fan_switch_port, HIGH);
+  digitalWrite(fan_switch_port, LOW);
   is_fan_running = true;
 }
 
@@ -76,7 +76,7 @@ void powerOnFan(){
  * Stop the fan by triggering  the switch
  */
 void powerOffFan(){
-  digitalWrite(fan_switch_port, LOW);
+  digitalWrite(fan_switch_port, HIGH);
   is_fan_running = false;
 }
 
